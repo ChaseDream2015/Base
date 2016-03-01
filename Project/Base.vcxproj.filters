@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{9ba2faee-1a75-49f8-8c0c-acaa2c581a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread">
+      <UniqueIdentifier>{ed067231-67b8-452e-b181-1a48d47ec0d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread\ECMsgWorker">
+      <UniqueIdentifier>{ace4cb77-5792-42f5-aaa7-ec221dc6143e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread\ECTaskWorker">
+      <UniqueIdentifier>{ba188186-c3a8-4891-94b4-6ccf63b58c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Thread\ECThreadWorker">
+      <UniqueIdentifier>{c5c189dd-3fd4-4b81-a4b5-823f50cd62c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestApp">
+      <UniqueIdentifier>{cdf4f6bb-97f2-4768-aa53-41f466756244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{7aca13df-673d-40ac-8985-90deb361c486}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\ECArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECBaseType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECCompare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECDictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECDllLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECMutableArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECPrefDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECRingQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ECType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECConfig.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECDllLoader.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECFile.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECLibraryLoader.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECMathUtil.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECMemOP.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECOSUtil.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECString.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ECStringOP.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\ECAutoLock.h">
+      <Filter>Source Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\ECMutex.h">
+      <Filter>Source Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\ECSemaphore.h">
+      <Filter>Source Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\ECSignal.h">
+      <Filter>Source Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\MsgWorker\ECMsgHandler.h">
+      <Filter>Source Files\Thread\ECMsgWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\MsgWorker\ECMsgWorker.h">
+      <Filter>Source Files\Thread\ECMsgWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\TaskWorker\ECTaskWorker.h">
+      <Filter>Source Files\Thread\ECTaskWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\ECThread.h">
+      <Filter>Source Files\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thread\ThreadWorker\ECThreadWorker.h">
+      <Filter>Source Files\Thread\ECThreadWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ECTCPSocket.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ECSocket.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ECUDPSocket.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\ECConfig.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECDllLoader.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECFile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECLibraryLoader.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECMathUtil.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECMemOP.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECOSUtil.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECString.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ECStringOP.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\ECAutoLock.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\ECMutex.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\ECSemaphore.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\ECSignal.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\MsgWorker\ECMsgHandler.cpp">
+      <Filter>Source Files\Thread\ECMsgWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\MsgWorker\ECMsgWorker.cpp">
+      <Filter>Source Files\Thread\ECMsgWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\TaskWorker\ECTaskWorker.cpp">
+      <Filter>Source Files\Thread\ECTaskWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TestApp\main.cpp">
+      <Filter>TestApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\ECThread.cpp">
+      <Filter>Source Files\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thread\ThreadWorker\ECThreadWorker.cpp">
+      <Filter>Source Files\Thread\ECThreadWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\ECTCPSocket.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\ECSocket.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\ECUDPSocket.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

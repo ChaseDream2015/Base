@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB79EF00-91C1-48A2-9F6A-499E50662AD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Base</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../Include;../Thread;../Network;../Thread/MsgWorker;../Thread/TaskWorker;../Thread/ThreadWorker;../Common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../Include;../Thread;../Network;../Thread/MsgWorker;../Thread/TaskWorker;../Thread/ThreadWorker;../Common</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\ECConfig.h" />
+    <ClInclude Include="..\Common\ECDllLoader.h" />
+    <ClInclude Include="..\Common\ECFile.h" />
+    <ClInclude Include="..\Common\ECLibraryLoader.h" />
+    <ClInclude Include="..\Common\ECMathUtil.h" />
+    <ClInclude Include="..\Common\ECMemOP.h" />
+    <ClInclude Include="..\Common\ECOSUtil.h" />
+    <ClInclude Include="..\Common\ECString.h" />
+    <ClInclude Include="..\Common\ECStringOP.h" />
+    <ClInclude Include="..\Include\ECArray.h" />
+    <ClInclude Include="..\Include\ECBaseType.h" />
+    <ClInclude Include="..\Include\ECCompare.h" />
+    <ClInclude Include="..\Include\ECDictionary.h" />
+    <ClInclude Include="..\Include\ECDllLib.h" />
+    <ClInclude Include="..\Include\ECError.h" />
+    <ClInclude Include="..\Include\ECLog.h" />
+    <ClInclude Include="..\Include\ECMutableArray.h" />
+    <ClInclude Include="..\Include\ECNode.h" />
+    <ClInclude Include="..\Include\ECPrefDef.h" />
+    <ClInclude Include="..\Include\ECQueue.h" />
+    <ClInclude Include="..\Include\ECRingQueue.h" />
+    <ClInclude Include="..\Include\ECStack.h" />
+    <ClInclude Include="..\Include\ECType.h" />
+    <ClInclude Include="..\Network\ECSocket.h" />
+    <ClInclude Include="..\Network\ECTCPSocket.h" />
+    <ClInclude Include="..\Network\ECUDPSocket.h" />
+    <ClInclude Include="..\Thread\ECAutoLock.h" />
+    <ClInclude Include="..\Thread\ECMutex.h" />
+    <ClInclude Include="..\Thread\ECSemaphore.h" />
+    <ClInclude Include="..\Thread\ECSignal.h" />
+    <ClInclude Include="..\Thread\ECThread.h" />
+    <ClInclude Include="..\Thread\MsgWorker\ECMsgHandler.h" />
+    <ClInclude Include="..\Thread\MsgWorker\ECMsgWorker.h" />
+    <ClInclude Include="..\Thread\TaskWorker\ECTaskWorker.h" />
+    <ClInclude Include="..\Thread\ThreadWorker\ECThreadWorker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\ECConfig.cpp" />
+    <ClCompile Include="..\Common\ECDllLoader.cpp" />
+    <ClCompile Include="..\Common\ECFile.cpp" />
+    <ClCompile Include="..\Common\ECLibraryLoader.cpp" />
+    <ClCompile Include="..\Common\ECMathUtil.cpp" />
+    <ClCompile Include="..\Common\ECMemOP.cpp" />
+    <ClCompile Include="..\Common\ECOSUtil.cpp" />
+    <ClCompile Include="..\Common\ECString.cpp" />
+    <ClCompile Include="..\Common\ECStringOP.cpp" />
+    <ClCompile Include="..\Network\ECSocket.cpp" />
+    <ClCompile Include="..\Network\ECTCPSocket.cpp" />
+    <ClCompile Include="..\Network\ECUDPSocket.cpp" />
+    <ClCompile Include="..\TestApp\main.cpp" />
+    <ClCompile Include="..\Thread\ECAutoLock.cpp" />
+    <ClCompile Include="..\Thread\ECMutex.cpp" />
+    <ClCompile Include="..\Thread\ECSemaphore.cpp" />
+    <ClCompile Include="..\Thread\ECSignal.cpp" />
+    <ClCompile Include="..\Thread\ECThread.cpp" />
+    <ClCompile Include="..\Thread\MsgWorker\ECMsgHandler.cpp" />
+    <ClCompile Include="..\Thread\MsgWorker\ECMsgWorker.cpp" />
+    <ClCompile Include="..\Thread\TaskWorker\ECTaskWorker.cpp" />
+    <ClCompile Include="..\Thread\ThreadWorker\ECThreadWorker.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
